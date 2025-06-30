@@ -43,3 +43,28 @@ product-manager/
 │   ├── routes/                # Express routes
 │   ├── models/                # Mongoose model
 │   └── index.js               # Entry point
+
+
+## ⚙️ Setup Locally
+
+### 🔧 Backend
+
+```bash
+cd product-manager-backend
+npm install
+# Create .env file
+PORT=5000
+MONGO_URI=your_mongo_db_url
+npm run dev
+
+### 🔧 Frontend
+
+```bash
+cd product-manager-frontend
+npm install
+# Create .env file
+REACT_APP_API_BASE_URL=http://localhost:5000/api/products
+npm start
+
+ℹ️ Be sure to replace your_mongo_db_url with your own MongoDB URI in .env when running locally.
+
