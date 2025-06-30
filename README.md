@@ -2,7 +2,7 @@
 
 A full-stack MERN app to manage products — built with **React**, **Node.js**, **Express**, **MongoDB**, and deployed using **Netlify** & **Render**.
 
-> 🔗 Live Demo: [View Website](https://your-netlify-site.netlify.app)  
+> 🔗 Live Demo: [View Website](https://smartmanage.netlify.app/)  
 > 🔗 Backend API: [View Render API](https://product-manager-backend-c0g7.onrender.com/api/products)
 
 ---
