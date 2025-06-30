@@ -1,7 +1,9 @@
-import axios from "axios";
 
+import axios from "axios";
+console.log("BASE_URL:", process.env.REACT_APP_API_BASE_URL);
 // Replace with your actual backend URL if deployed
-const API_BASE_URL = "https://product-manager-backend-c0g7.onrender.com/";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 
 export const getAllProducts = async () => {
   const res = await axios.get(API_BASE_URL);
@@ -23,3 +25,4 @@ export const updateProduct = async (id, updatedData) => {
   const res = await axios.put(`${API_BASE_URL}/${id}`, updatedData);
   return res.data;
 };
+
