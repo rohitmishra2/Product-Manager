@@ -8,16 +8,6 @@ export default function ProductList({ products, setProducts }) {
   const [showModal, setShowModal] = useState(false);
   const [deletingProductId, setDeletingProductId] = useState(null);
 
-//   const handleDelete = async (id) => {
-//     const confirmDelete = window.confirm(
-//       "Are you sure you want to delete this product?"
-//     );
-//     if (!confirmDelete) return;
-//     await deleteProduct(id);
-//     setProducts(products.filter((product) => product._id !== id));
-//     toast.success("Product deleted!");
-//   };
-
   const startEditing = (product) => {
     setEditingId(product._id);
     setEditData({

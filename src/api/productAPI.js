@@ -1,7 +1,6 @@
 
 import axios from "axios";
-console.log("BASE_URL:", process.env.REACT_APP_API_BASE_URL);
-// Replace with your actual backend URL if deployed
+
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 
@@ -20,7 +19,6 @@ export const deleteProduct = async (id) => {
   return res.data;
 };
 
-// Optional: For future editing
 export const updateProduct = async (id, updatedData) => {
   const res = await axios.put(`${API_BASE_URL}/${id}`, updatedData);
   return res.data;
